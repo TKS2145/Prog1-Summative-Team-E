@@ -4,14 +4,15 @@ import PaymentRecorder
 import StudentViewer
 import ReportViewer
 
-from fee_manager import FeeManager
+#from fee_manager import FeeManager
 
 def main():
-    manager = FeeManager()
+    #manager = FeeManager()
 
     while True:
         Menu.show_menu()
         choice = input("Choice: ")
+
         try:
             if choice == "1":
                 StudentAdder.add_student(manager)
