@@ -7,7 +7,7 @@ class Student:
         self.class_name = class_name
         self.total_fee = float(total_fee)
         self.amount_paid = 0.0
-        self.balance = self.total_fee
+        self.balance = self.total_fee - self.amount_paid
         self.payment_history = []  # list of payment amounts
 
     # Add a payment to the student
@@ -33,6 +33,14 @@ class Student:
             "balance": self.balance,
             "payment_history": self.payment_history
         }
+
+    def view(self):
+            print(f"ID: {self.student_id}")
+            print(f"Name: {self.name}")
+            print(f"Class: {self.class_name}")
+            print(f"Total Fee: {self.total_fee}")
+            print(f"Paid: {self.amount_paid}")
+            print(f"Balance: {self.balance}")
 
 
 # payment.py

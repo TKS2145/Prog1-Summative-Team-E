@@ -1,4 +1,4 @@
-def record_payment(manager):
+def record_payment():
     student_id = input("Student ID: ")
     amount = float(input("Payment Amount: "))
     manager.record_payment(student_id, amount)
