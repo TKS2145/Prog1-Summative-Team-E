@@ -1,5 +1,4 @@
 # menu.py
-from fee_manager import FeeManager
 
 def show_menu():
     print("\n--- School Fee Payment System ---")
