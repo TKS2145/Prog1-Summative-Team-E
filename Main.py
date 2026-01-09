@@ -26,9 +26,8 @@ def main():
             elif choice == "0":
                ExitSystem.ExitProgram()
             else:
-                print(" Invalid choice")
-        except ValueError as e:
-            print(" Input error:", e)
+                print(" Invalid choice. Please enter a 'number' from 0-5 (inclusive)")
+
         except Exception as e:
             print("Unexpected error:", e)
 
