@@ -14,7 +14,7 @@ def main():
     modified_payment_list = False
 
     #Testing file read
-    test.readfile()
+    #test.readfile("StudentRecords.json")
 
     while True:
         Menu.show_menu()
