@@ -8,9 +8,9 @@ def view_student():
 
         print("""
     ---Student Viewer---
-    1: View all student records
-    2: View only a specific student's record
-    0: Cancel          
+1: View all student records
+2: View only a specific student's record
+0: Cancel          
               """)
     
         choice = input("Enter choice: ")
@@ -38,7 +38,18 @@ def view_all_Student():
 
 def view_specific_student():
 
-    student_id = input("Student ID: ")
+   while True:
+    try:
+        student_id = int(input("Student ID: ")) #Checking if correct a number was entered
+
+        #Converting into 3 digit format
+        student_id = str(student_id)
+        while len(student_id) < 3:
+            student_id = "0" + student_id 
+        break
+    except:
+        print("Please enter a valid number")
+
     for x in Studentlist:
         if x.student_id == student_id :
             x.view()

@@ -8,14 +8,14 @@ class Student:
         self.total_fee = float(total_fee)
         self.amount_paid = 0.0
         self.balance = self.total_fee - self.amount_paid
-        self.payment_history = []  # list of payments
+    #    self.payment_history = []  # list of payments 
 
 
     # Add a payment to the student
     def add_payment(self, amount, payment):
         self.amount_paid += amount
         self.balance = self.total_fee - self.amount_paid # Calculate balance remaining
-        self.payment_history.append(payment)
+    #    self.payment_history.append(payment)
         
 
     # Convert to dictionary for saving
@@ -27,7 +27,7 @@ class Student:
             "Total Fee": self.total_fee,
             "Amount Paid": self.amount_paid,
             "Balance left": self.balance,
-            "Payment History": self.payment_history
+        #    "Payment History": self.payment_history
         }
 
     def view(self):

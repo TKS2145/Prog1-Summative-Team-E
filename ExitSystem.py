@@ -1,6 +1,9 @@
 import sys
+import FileHandler
 
 def ExitProgram():
-        print("""Thank you for using this program.  
-Exiting now""")
+        print("Saving data into Student Record")
+        FileHandler.WriteFile()
+        print("Saving done")
+        print("Exiting now")
         sys.exit(0)
