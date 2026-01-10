@@ -1,10 +1,10 @@
 import Globals
 from Classes import Payment
 
-def record_payment():
+def record_new_payment():
 
     if Globals.StudentCount == 0: 
-        print("There are no students to reocrd any payments. Please register at least one student.")
+        print("There are no students to record any payments. Please register at least one student.")
         return
     
     else:
@@ -54,14 +54,19 @@ def record_payment():
             except:
                 print("Please enter payment account in digits (Decimal accepted")
 
-        index = int(student_id) -1 #Since student id is incremented before adding new student, index of student is 1 less than student id
-
-        new_payment = Payment(student_id, amount)
-        Globals.PaymentList.append(new_payment)
-        Globals.Studentlist[index].add_payment(amount, new_payment)
+        add_new_payment(student_id, amount)
 
         print("\nPayment recorded successfully")
 
-        
-
         return
+    
+
+def add_new_payment(student_id, amount):
+
+    index = int(student_id) -1 #Since student id is incremented before adding new student, index of student is 1 less than student id
+
+    new_payment = Payment(student_id, amount)
+    Globals.PaymentList.append(new_payment)
+    Globals.Studentlist[index].add_payment(amount, new_payment)
+
+    return
