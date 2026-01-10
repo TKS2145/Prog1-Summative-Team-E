@@ -18,7 +18,7 @@ def main():
             if choice == "1":
                 StudentAdder.new_student()
             elif choice == "2":
-                PaymentRecorder.record_payment()
+                PaymentRecorder.record_new_payment()
             elif choice == "3":
                 StudentViewer.view_student()
             elif choice == "4":

@@ -8,28 +8,26 @@ class Student:
         self.total_fee = float(total_fee)
         self.amount_paid = 0.0
         self.balance = self.total_fee - self.amount_paid
-        self.payment_history = []  # list of payment amounts
+        self.payment_history = []  # list of payments
+
 
     # Add a payment to the student
-    def add_payment(self, amount):
+    def add_payment(self, amount, payment):
         self.amount_paid += amount
-        self.calculate_balance()
-        self.payment_history.append(amount)
-
-    # Calculate balance remaining
-    def calculate_balance(self):
-        self.balance = self.total_fee - self.amount_paid
+        self.balance = self.total_fee - self.amount_paid # Calculate balance remaining
+        self.payment_history.append(payment)
+        
 
     # Convert to dictionary for saving
     def to_dict(self):
         return {
-            "student_id": self.student_id,
-            "name": self.name,
-            "class_name": self.class_name,
-            "total_fee": self.total_fee,
-            "amount_paid": self.amount_paid,
-            "balance": self.balance,
-            "payment_history": self.payment_history
+            "Student ID": self.student_id,
+            "Name": self.name,
+            "Class Name": self.class_name,
+            "Total Fee": self.total_fee,
+            "Amount Paid": self.amount_paid,
+            "Balance left": self.balance,
+            "Payment History": self.payment_history
         }
 
     def view(self):
@@ -47,7 +45,7 @@ from datetime import datetime
 class Payment:
     def __init__(self, student_id, amount):
         self.student_id = student_id
-        self.amount = float(amount)
+        self.amount = float(amount) #hardcoding it as float just to make sure
         self.date = datetime.now().strftime("%Y-%m-%d")
 
     def to_dict(self):
