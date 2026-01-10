@@ -12,8 +12,6 @@ class Student:
 
     # Add a payment to the student
     def add_payment(self, amount):
-        if amount <= 0:
-            raise ValueError("Payment must be greater than zero")
         self.amount_paid += amount
         self.calculate_balance()
         self.payment_history.append(amount)
@@ -43,7 +41,7 @@ class Student:
             print(f"Balance: {self.balance}")
 
 
-# payment.py
+# payment class
 from datetime import datetime
 
 class Payment:
