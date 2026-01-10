@@ -2,8 +2,10 @@ import json
 from Globals import Studentlist
 from Globals import PaymentList
 
-def ReadFile():
-    pass
+def ReadFile(filename):
+    with open(filename, "r") as filereader:
+        json_str = json.load(filereader)
+        print(json_str)
 
 def WriteFile(filename ="StudentRecords.json"): #Writing to StudentRecord as it is only file which needs to be overwritten
     #Over-write StudentRecords as it is not possible to modify a single entry of data

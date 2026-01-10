@@ -5,11 +5,16 @@ import StudentViewer
 import ReportViewer
 import ExitSystem
 
+import test # Testing File reading
+
 #from fee_manager import FeeManager
 
 def main():
     modified_Student_list = False
     modified_payment_list = False
+
+    #Testing file read
+    test.readfile()
 
     while True:
         Menu.show_menu()
