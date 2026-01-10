@@ -14,8 +14,9 @@ def new_student():
         except:
             print("Please only enter digits, decimal numbers accepted.")
 
-    add_student(name, class_name, total_fee) #Since toael fee should be fixed for classes, should I add a Class class for each class?
-    print(" Student added successfully")
+    add_student(name, class_name, total_fee) #Since total fee should be fixed for classes, should I add a Class class for each class
+    print("\nStudent added successfully")
+    return True
 
 def add_student(name, class_name, total_fee):
 

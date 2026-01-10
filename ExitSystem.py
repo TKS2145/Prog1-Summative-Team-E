@@ -1,18 +1,16 @@
 import sys
 import FileHandler
-from Globals import ModifiedStudentList
-from Globals import ModifiedPaymentList
 
 
-def ExitProgram():
+def ExitProgram(ModifiedStudentList, ModifiedPaymentList): 
 
         if ModifiedStudentList:
-                print("Saving new data into Student Record")
-                FileHandler.WriteFile("StudentRecords") #
+                print("\nSaving new data into Student Record")
+                FileHandler.WriteFile("StudentRecords.json") #
 
         if ModifiedPaymentList:
                 print("\nSaving new data into PaymentRecords")
-                FileHandler.AppendFile("PaymentRecords.py")
+                FileHandler.AppendFile("PaymentRecords.json") #Appending to the PaymentRecord
 
         print("Saving done")
         print("Exiting now")
