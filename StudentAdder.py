@@ -28,7 +28,7 @@ Choose Class:
     add_student(name, class_name, total_fee)
     print("Student added successfully")
 
-    add_student(name, class_name, total_fee) #Since total fee should be fixed for classes, should I add a Class class for each class
+    add_student(name, class_name, total_fee)
     print("\nStudent added successfully")
     return True
 
