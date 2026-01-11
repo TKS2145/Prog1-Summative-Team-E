@@ -28,8 +28,6 @@ def view_student():
             return
         else:
             print("Invalid input. Please enter again")
-
-
  
 def view_all_Student():
     for x in Studentlist:
@@ -54,13 +52,8 @@ def view_specific_student():
         if x.student_id == student_id :
             x.view()
             return #returning since Student_ID is unique for each student and it has been found
-    
-    
+        
     print("Student ID not found. Please check and enter again.") #Will run if student not found so program did not return
     
     return
-    
-
-    
-
-
+   

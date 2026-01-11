@@ -2,7 +2,7 @@ import Globals
 from Classes import Payment
 
 def record_new_payment():
-
+    
     if Globals.StudentCount == 0: 
         print("There are no students to record any payments. Please register at least one student.")
         return
