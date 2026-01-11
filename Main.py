@@ -8,7 +8,8 @@ import ExitSystem
 #from fee_manager import FeeManager
 
 def main():
-    #manager = FeeManager()
+    modified_Student_list = False
+    modified_payment_list = False
 
     while True:
         Menu.show_menu()
@@ -16,15 +17,15 @@ def main():
 
         try:
             if choice == "1":
-                StudentAdder.new_student()
+                modified_Student_list = StudentAdder.new_student()
             elif choice == "2":
-                PaymentRecorder.record_new_payment()
+                modified_payment_list = PaymentRecorder.record_new_payment()
             elif choice == "3":
                 StudentViewer.view_student()
             elif choice == "4":
                 ReportViewer.view_reports()
             elif choice == "0":
-               ExitSystem.ExitProgram()
+               ExitSystem.ExitProgram(modified_Student_list, modified_payment_list)
             else:
                 print(" Invalid choice. Please enter a 'number' from 0-4 (inclusive)")
 

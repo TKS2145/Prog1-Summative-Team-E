@@ -1,8 +1,7 @@
 Studentlist= []
 PaymentList = []
 StudentCount = 0
-ModifiedStudentList = False
-ModifiedPaymentList = False
+
 
 CLASS_FEES = {
     "1": ("Computer Science", 5000),

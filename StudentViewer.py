@@ -32,6 +32,7 @@ def view_student():
 def view_all_Student():
     for x in Studentlist:
         x.view()
+        print()
     return
 
 def view_specific_student():
