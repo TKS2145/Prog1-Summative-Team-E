@@ -8,18 +8,27 @@ def new_student():
     # Display available classes with fixed fees
     print("""
 Choose Class:
-1: Computer Science (Rs 5000)
-2: Software Engineering (Rs 5000)
-3: International Business Trade (Rs 4500)
-4: Entrepreneurial Leadership (Rs 4200)
+1: Computer Science ($ 5000)
+2: Software Engineering ($ 5000)
+3: International Business Trade ($ 4500)
+4: Entrepreneurial Leadership ($ 4200)
     """)
+
+    Class_Fees = {
+    "1": ("Computer Science", 5000),
+    "2": ("Software Engineering", 5000),
+    "3": ("International Business Trade", 4500),
+    "4": ("Entrepreneurial Leadership", 4200)
+}
+
+
 
     while True:
         class_choice = input("Enter class number: ")
 
         # Validate class selection
-        if class_choice in Globals.CLASS_FEES:
-            class_name, total_fee = Globals.CLASS_FEES[class_choice]
+        if class_choice in Class_Fees:
+            class_name, total_fee = Class_Fees[class_choice]
             break
         else:
             print("Invalid choice. Please select a number between 1 and 4.")
@@ -28,7 +37,7 @@ Choose Class:
     add_student(name, class_name, total_fee)
     print("Student added successfully")
 
-    add_student(name, class_name, total_fee) #Since total fee should be fixed for classes, should I add a Class class for each class
+    add_student(name, class_name, total_fee)
     print("\nStudent added successfully")
     return True
 
