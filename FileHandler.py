@@ -23,10 +23,14 @@ def WriteFile(filename ="StudentRecords.json"): #Writing to StudentRecord as it 
     
 
 def AppendFile(filename, appendinglist = PaymentList): #Appending PaymentList as default
+    
+    with open(filename, "a") as fileWriter:
         
-    with open("filename", "a") as fileWriter:
-        for x in appendinglist in range(1, len(appendinglist)):
-            data = dict(x.to_dict)
+        for x in appendinglist:
+            print("Loop started")
+            if x == appendinglist[0]:
+                continue
+            data = dict(x.to_dict())
             json_str = json.dumps(data, indent= 4)
             fileWriter.write(json_str)
 

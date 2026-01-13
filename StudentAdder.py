@@ -1,4 +1,5 @@
 import Globals
+from Menu import show_class
 from Classes import Student
 
 def new_student():
@@ -6,13 +7,7 @@ def new_student():
     name = input("Name: ")
 
     # Display available classes with fixed fees
-    print("""
-Choose Class:
-1: Computer Science ($ 5000)
-2: Software Engineering ($ 5000)
-3: International Business Trade ($ 4500)
-4: Entrepreneurial Leadership ($ 4200)
-    """)
+    show_class()
 
     Class_Fees = {
     "1": ("Computer Science", 5000),
