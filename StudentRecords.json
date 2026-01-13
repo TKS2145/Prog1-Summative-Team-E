@@ -1,15 +1,18 @@
-{
-    "Student ID": "001",
-    "Name": "Han",
-    "Class Name": "Computer Science",
-    "Total Fee": 5000.0,
-    "Amount Paid": 0.0,
-    "Balance left": 5000.0
-}{
-    "Student ID": "002",
-    "Name": "Bona",
-    "Class Name": "Software Engineering",
-    "Total Fee": 5000.0,
-    "Amount Paid": 0.0,
-    "Balance left": 5000.0
-}
+[
+    {
+        "Student ID": "001",
+        "Name": "Tom",
+        "Class Name": "Computer Science",
+        "Total Fee": 5000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 5000.0
+    },
+    {
+        "Student ID": "002",
+        "Name": "Qwen",
+        "Class Name": "Software Engineering",
+        "Total Fee": 5000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 5000.0
+    }
+]

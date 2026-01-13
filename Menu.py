@@ -1,5 +1,3 @@
-# menu.py
-
 def show_main_menu():
     print("\n--- School Fee Payment System ---")
     print("1. Add Student")
