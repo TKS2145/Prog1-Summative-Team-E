@@ -12,7 +12,7 @@ def main():
     modified_payment_list = False
 
     while True:
-        Menu.show_menu()
+        Menu.show_main_menu()
         choice = input("Choice: ")
 
         try:

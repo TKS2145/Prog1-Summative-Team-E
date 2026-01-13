@@ -33,15 +33,15 @@ Choose Class:
         else:
             print("Invalid choice. Please select a number between 1 and 4.")
 
-    # Add student with fixed class fee
-    add_student(name, class_name, total_fee)
-    print("Student added successfully")
+    #Assuming new studednts are not paying yet
+    amount_paid = 0.0
 
-    add_student(name, class_name, total_fee)
+    # Add student with fixed class fee
+    add_student(name, class_name, total_fee, amount_paid)
     print("\nStudent added successfully")
     return True
 
-def add_student(name, class_name, total_fee):
+def add_student(name, class_name, total_fee, amount_paid):
     """
     Creates a new Student object and adds it to the global Studentlist
     """
@@ -56,5 +56,5 @@ def add_student(name, class_name, total_fee):
 
     # Create student object and store it
     Globals.Studentlist.append(
-        Student(student_id, name, class_name, total_fee)
+        Student(student_id, name, class_name, total_fee, amount_paid)
     )

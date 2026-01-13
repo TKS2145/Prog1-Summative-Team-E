@@ -1,18 +1,18 @@
 #Student Class
 
 class Student:
-    def __init__(self, student_id, name, class_name, total_fee,):
+    def __init__(self, student_id, name, class_name, total_fee, amount_paid):
         self.student_id = student_id
         self.name = name
         self.class_name = class_name
         self.total_fee = float(total_fee)
-        self.amount_paid = 0.0
+        self.amount_paid = amount_paid
         self.balance = self.total_fee - self.amount_paid
     #    self.payment_history = []  # list of payments 
 
 
     # Add a payment to the student
-    def add_payment(self, amount, payment):
+    def add_payment(self, amount):
         self.amount_paid += amount
         self.balance = self.total_fee - self.amount_paid # Calculate balance remaining
     #    self.payment_history.append(payment)
@@ -36,7 +36,7 @@ class Student:
             print(f"Class: {self.class_name}")
             print(f"Total Fee: {self.total_fee}")
             print(f"Paid: {self.amount_paid}")
-            print(f"Balance: {self.balance}")
+            print(f"Balance left: {self.balance}")
 
 
 # payment class
