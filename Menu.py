@@ -9,8 +9,8 @@ def show_main_menu():
 def show_class():
     print("""
 Choose Class:
-1: Computer Science ($ 5000)
-2: Software Engineering ($ 5000)
-3: International Business Trade ($ 4500)
-4: Entrepreneurial Leadership ($ 4200)
+1: Computer Science ($ 50000)
+2: Software Engineering ($ 50000)
+3: International Business Trade ($ 45000)
+4: Entrepreneurial Leadership ($ 42000)
     """)

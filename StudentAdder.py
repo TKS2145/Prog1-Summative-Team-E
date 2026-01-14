@@ -1,29 +1,23 @@
 import Globals
 from Classes import Student
+from Menu import show_class
 
 def new_student():
     print("\nEnter details of student")
     name = input("Name: ")
 
-    # Display available classes with fixed fees
-    print("""
-Choose Class:
-1: Computer Science ($ 5000)
-2: Software Engineering ($ 5000)
-3: International Business Trade ($ 4500)
-4: Entrepreneurial Leadership ($ 4200)
-    """)
-
     Class_Fees = {
-    "1": ("Computer Science $", 5000),
-    "2": ("Software Engineering $", 5000),
-    "3": ("International Business Trade $", 4500),
-    "4": ("Entrepreneurial Leadership $", 4200)
+    "1": ("Computer Science $", 50000),
+    "2": ("Software Engineering $", 50000),
+    "3": ("International Business Trade $", 45000),
+    "4": ("Entrepreneurial Leadership $", 42000)
 }
 
 
 
     while True:
+
+        show_class() #Displays available classes with fixed prices
         class_choice = input("Enter class number: ")
 
         # Validate class selection
@@ -35,24 +29,25 @@ Choose Class:
 
     # Add student with fixed class fee
     add_student(name, class_name, total_fee)
-    print("Student added successfully")
-
-    add_student(name, class_name, total_fee)
     print("\nStudent added successfully")
     return True
 
-def add_student(name, class_name, total_fee):
+def add_student(name, class_name, total_fee, student_id = "0"):
     """
     Creates a new Student object and adds it to the global Studentlist
     """
 
     # Increment student count
     Globals.StudentCount += 1
-    student_id = str(Globals.StudentCount)
 
-    # Format student ID to 3 digits (e.g. 001, 002)
-    while len(student_id) < 3:
-        student_id = "0" + student_id
+    #Checks if student id already exist and creates a new one if it does not exist
+    if student_id == "0":
+
+        student_id = str(Globals.StudentCount)
+
+        # Format student ID to 3 digits (e.g. 001, 002)
+        while len(student_id) < 3:
+            student_id = "0" + student_id
 
     # Create student object and store it
     Globals.Studentlist.append(
