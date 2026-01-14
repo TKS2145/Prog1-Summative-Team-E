@@ -67,6 +67,6 @@ def add_payment(student_id, amount):
 
     new_payment = Payment(student_id, amount)
     Globals.PaymentList.append(new_payment)
-    Globals.Studentlist[index].add_payment(amount, new_payment)
+    Globals.Studentlist[index].add_payment(amount)
 
-    return
+    return True
