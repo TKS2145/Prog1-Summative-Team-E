@@ -1,7 +1,7 @@
 #Student Class
 
 class Student:
-    def __init__(self, student_id, name, class_name, total_fee, amount_paid):
+    def __init__(self, student_id, name, class_name, total_fee, amount_paid=0.0):
         self.student_id = student_id
         self.name = name
         self.class_name = class_name
