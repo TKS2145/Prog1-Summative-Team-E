@@ -1,5 +1,8 @@
 def show_main_menu():
-    print("\n--- School Fee Payment System ---")
+    print("Welcome to African Leadership Academy ")
+    print("-----------------------------------")
+    print("\n---ALA Fee Payment System ---")
+    print("choose an option:")
     print("1. Add Student")
     print("2. Record Payment")
     print("3. View Student Details")
