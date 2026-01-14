@@ -1,5 +1,4 @@
 import Globals
-from Menu import show_class
 from Classes import Student
 
 def new_student():
@@ -7,13 +6,19 @@ def new_student():
     name = input("Name: ")
 
     # Display available classes with fixed fees
-    show_class()
+    print("""
+Choose Class:
+1: Computer Science ($ 5000)
+2: Software Engineering ($ 5000)
+3: International Business Trade ($ 4500)
+4: Entrepreneurial Leadership ($ 4200)
+    """)
 
     Class_Fees = {
-    "1": ("Computer Science", 5000),
-    "2": ("Software Engineering", 5000),
-    "3": ("International Business Trade", 4500),
-    "4": ("Entrepreneurial Leadership", 4200)
+    "1": ("Computer Science $", 5000),
+    "2": ("Software Engineering $", 5000),
+    "3": ("International Business Trade $", 4500),
+    "4": ("Entrepreneurial Leadership $", 4200)
 }
 
 
@@ -28,15 +33,15 @@ def new_student():
         else:
             print("Invalid choice. Please select a number between 1 and 4.")
 
-    #Assuming new studednts are not paying yet
-    amount_paid = 0.0
-
     # Add student with fixed class fee
-    add_student(name, class_name, total_fee, amount_paid)
+    add_student(name, class_name, total_fee)
+    print("Student added successfully")
+
+    add_student(name, class_name, total_fee)
     print("\nStudent added successfully")
     return True
 
-def add_student(name, class_name, total_fee, amount_paid):
+def add_student(name, class_name, total_fee):
     """
     Creates a new Student object and adds it to the global Studentlist
     """
@@ -51,5 +56,5 @@ def add_student(name, class_name, total_fee, amount_paid):
 
     # Create student object and store it
     Globals.Studentlist.append(
-        Student(student_id, name, class_name, total_fee, amount_paid)
+        Student(student_id, name, class_name, total_fee)
     )

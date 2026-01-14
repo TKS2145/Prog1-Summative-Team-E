@@ -5,14 +5,13 @@ import StudentViewer
 import ReportViewer
 import ExitSystem
 
-#from fee_manager import FeeManager
 
 def main():
     modified_Student_list = False
     modified_payment_list = False
 
     while True:
-        Menu.show_main_menu()
+        Menu.show_menu()
         choice = input("Choice: ")
 
         try:
