@@ -11,8 +11,8 @@ def ExitProgram(ModifiedStudentList, ModifiedPaymentList):
 
         if ModifiedPaymentList:
                 print("\nSaving new data into PaymentRecords")
-                FileHandler.AppendFile("PaymentRecords.json", Globals.PaymentList) #Appending to the PaymentRecord
+                FileHandler.WriteFile("PaymentRecords.json", Globals.PaymentList) #Appending to the PaymentRecord
 
-        print("Saving done")
+        print("\nSaving done")
         print("Exiting now")
         sys.exit(0)

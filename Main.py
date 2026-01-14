@@ -1,6 +1,6 @@
 import Menu
 import StudentAdder
-import PaymentRecorder
+import PaymentAdder
 import StudentViewer
 import ReportViewer
 import ExitSystem
@@ -18,7 +18,7 @@ def main():
             if choice == "1":
                 modified_Student_list = StudentAdder.new_student()
             elif choice == "2":
-                modified_payment_list = PaymentRecorder.record_new_payment()
+                modified_payment_list = PaymentAdder.record_new_payment()
             elif choice == "3":
                 StudentViewer.view_student()
             elif choice == "4":
