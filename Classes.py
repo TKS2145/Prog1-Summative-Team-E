@@ -38,6 +38,9 @@ class Student:
             print(f"Paid: {self.amount_paid}")
             print(f"Balance left: {self.balance}")
 
+    def get_student_id(self):
+         return self.student_id
+
 
 # payment class
 from datetime import datetime

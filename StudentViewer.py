@@ -50,7 +50,7 @@ def view_specific_student():
         print("Please enter a valid number")
 
     for x in Studentlist:
-        if x.student_id == student_id :
+        if x.get_student_id() == student_id :
             x.view()
             return #returning since Student_ID is unique for each student and it has been found
         
