@@ -1,7 +1,7 @@
 def show_main_menu():
-    print("Welcome to African Leadership Academy ")
+    print("Welcome to African Leadership College of Higher Education ")
     print("-----------------------------------")
-    print("\n---ALA Fee Payment System ---")
+    print("\n---ALCHE Fee Payment System ---")
     print("choose an option:")
     print("1. Add Student")
     print("2. Record Payment")
