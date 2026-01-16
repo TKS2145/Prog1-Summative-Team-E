@@ -1,0 +1,50 @@
+[
+    {
+        "Student ID": "001",
+        "Name": "Tom",
+        "Class Name": "Computer Science ",
+        "Total Fee": 50000.0,
+        "Amount Paid": 10000.0,
+        "Balance left": 40000.0
+    },
+    {
+        "Student ID": "002",
+        "Name": "Jonas",
+        "Class Name": "Software Engineering ",
+        "Total Fee": 50000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 50000.0
+    },
+    {
+        "Student ID": "003",
+        "Name": "Kimu",
+        "Class Name": "International Business Trade ",
+        "Total Fee": 45000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 45000.0
+    },
+    {
+        "Student ID": "004",
+        "Name": "Toosh",
+        "Class Name": "Computer Science ",
+        "Total Fee": 50000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 50000.0
+    },
+    {
+        "Student ID": "005",
+        "Name": "Haan",
+        "Class Name": "Entrepreneurial Leadership ",
+        "Total Fee": 42000.0,
+        "Amount Paid": 4000.0,
+        "Balance left": 38000.0
+    },
+    {
+        "Student ID": "006",
+        "Name": "Liam",
+        "Class Name": "Entrepreneurial Leadership ",
+        "Total Fee": 42000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 42000.0
+    }
+]
