@@ -4,8 +4,8 @@
         "Name": "Tom",
         "Class Name": "Computer Science ",
         "Total Fee": 50000.0,
-        "Amount Paid": 5000.0,
-        "Balance left": 45000.0
+        "Amount Paid": 10000.0,
+        "Balance left": 40000.0
     },
     {
         "Student ID": "002",
@@ -36,7 +36,15 @@
         "Name": "Haan",
         "Class Name": "Entrepreneurial Leadership ",
         "Total Fee": 42000.0,
-        "Amount Paid": 2000.0,
-        "Balance left": 40000.0
+        "Amount Paid": 4000.0,
+        "Balance left": 38000.0
+    },
+    {
+        "Student ID": "006",
+        "Name": "Liam",
+        "Class Name": "Entrepreneurial Leadership ",
+        "Total Fee": 42000.0,
+        "Amount Paid": 0.0,
+        "Balance left": 42000.0
     }
 ]

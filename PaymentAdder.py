@@ -27,7 +27,7 @@ def record_new_payment():
                 except:
                     print("Please enter a valid number")
 
-            if int(student_id) > Globals.StudentCount: #Checking if ID entered exist. Since student id is automatically incremented, it cannot be greater than current  student count
+            if int(student_id) > Globals.StudentCount or int(student_id) < 1: #Checking if ID entered exist. Since student id is automatically incremented, it cannot be greater than current  student count
               
                 print("Student ID does not exist.")
                 while True:

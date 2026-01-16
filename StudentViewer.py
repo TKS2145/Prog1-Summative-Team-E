@@ -26,7 +26,7 @@ def view_student():
             view_all_Student()
             return
         elif choice == "2":
-            print("\n Viewing specific student")
+            print("\n---Viewing specific student---")
             view_specific_student()
             return
         else:
@@ -40,17 +40,19 @@ def view_all_Student():
 
 def view_specific_student():
 
-   while True:
-    try:
-        student_id = int(input("Student ID: ")) #Checking if correct a number was entered
+    while True:
+        try:
+            student_id = int(input("Student ID: ")) #Checking if correct a number was entered
 
-        #Converting into 3 digit format
-        student_id = str(student_id)
-        while len(student_id) < 3:
-            student_id = "0" + student_id 
-        break
-    except:
-        print("Please enter a valid number")
+            #Converting into 3 digit format
+            student_id = str(student_id)
+            while len(student_id) < 3:
+                student_id = "0" + student_id 
+            
+            break
+        except:
+            print("Please enter a valid number")
+
 
     for x in Studentlist:
         if x.get_student_id() == student_id :
