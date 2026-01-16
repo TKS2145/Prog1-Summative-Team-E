@@ -4,6 +4,9 @@ def view_student():
 
     #Menu to be presented
      
+    if Studentlist == None:
+        return
+
     while True:
 
         print("""

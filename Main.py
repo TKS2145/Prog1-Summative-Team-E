@@ -3,14 +3,13 @@ import StudentAdder
 import PaymentAdder
 import StudentViewer
 import ReportViewer
+import PopulateList
 import ExitSystem
-import Globals
 from FileHandler import ReadFile
 
 def main():
 
-    Globals.Studentlist = ReadFile("StudentRecords.json")
-    Globals.PaymentList = ReadFile("PaymentRecords.json")
+    PopulateList.populatinglists()
 
     modified_Student_list = False
     modified_payment_list = False

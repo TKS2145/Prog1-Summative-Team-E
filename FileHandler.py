@@ -4,10 +4,11 @@ def ReadFile(filename):
     try:
         with open(filename, "r") as filereader:
             str_data = json.load(filereader)
-            print(str_data)
+            print(str_data) #Just for testing
             return str_data
     except:
-        print("File reading error")
+        print("File reading error. Check if file is empty.")
+        return 
 
 def WriteFile(filename, list_to_write =[] ): #Forcing lsit_to_write to be a list
 
