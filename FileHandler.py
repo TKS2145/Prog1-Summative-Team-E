@@ -1,6 +1,5 @@
 import json
 
-
 def ReadFile(filename):
     try:
         with open(filename, "r") as filereader:
@@ -10,23 +9,9 @@ def ReadFile(filename):
     except:
         print("File reading error")
 
-def WriteFile(filename ="StudentRecords.json", list_to_write =[] ): #Writing to StudentRecord as it is only file which needs to be overwritten
-    #Over-write StudentRecords as it is not possible to modify a single entry of data
-    '''
-        with open(filename, "w") as fileWriter:
-            try:
-                data = dict(Studentlist[0].to_dict())
-                json_str = json.dumps(data, indent= 4)
-                fileWriter.write(json_str)
-            except:
-                print("json formating error")
+def WriteFile(filename, list_to_write =[] ): #Forcing lsit_to_write to be a list
 
-        if len(Studentlist) > 1:
-            AppendFile(filename, Studentlist) #Sending StudentList
-        else:
-            return
-        
-    '''
+    #Over-write StudentRecords as it is not possible to modify a single entry of data
     data = []
     for x in list_to_write:
         data.append(x.to_dict())
@@ -37,16 +22,3 @@ def WriteFile(filename ="StudentRecords.json", list_to_write =[] ): #Writing to 
             fileWriter.write(json_str)
         except:
             print("json formating error")
-
-'''
-def AppendFile(filename, appendinglist = PaymentList): #Appending PaymentList as default
-    
-    with open(filename, "a") as fileWriter:
-        
-        for x in appendinglist:
-            if x == appendinglist[0]:
-                continue
-            data = dict(x.to_dict())
-            json_str = json.dumps(data, indent= 4)
-            fileWriter.write(json_str)
-'''
