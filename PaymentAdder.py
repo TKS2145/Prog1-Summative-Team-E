@@ -58,7 +58,7 @@ def record_new_payment():
 
         print("\nPayment recorded successfully")
 
-        return
+        return True
     
 
 def add_payment(student_id, amount):
