@@ -4,7 +4,7 @@ def ReadFile(filename):
     try:
         with open(filename, "r") as filereader:
             str_data = json.load(filereader)
-            print(str_data) #Just for testing
+            #print(str_data) #Just for testing
             return str_data
     except:
         print("File reading error. Check if file is empty.")

@@ -16,6 +16,6 @@ def populatinglists():
     if DictListPayment != None:
         for y in DictListPayment:
 
-            add_payment(y["student_id"],y["Amount"],)
+            add_payment(y["student_id"],y["amount"], y["date"])
 
     

@@ -1,5 +1,6 @@
 import Globals
 from Classes import Payment
+from datetime import datetime
 
 def record_new_payment():
     
@@ -54,6 +55,8 @@ def record_new_payment():
             except:
                 print("Please enter payment account in digits (Decimal accepted")
 
+        date = datetime.now().strftime("%Y-%m-%d")
+
         add_payment(student_id, amount)
 
         print("\nPayment recorded successfully")
@@ -61,11 +64,11 @@ def record_new_payment():
         return True
     
 
-def add_payment(student_id, amount):
+def add_payment(student_id, amount, date):
 
     index = int(student_id) -1 #Since student id is incremented before adding new student, index of student is 1 less than student id
 
-    new_payment = Payment(student_id, amount)
+    new_payment = Payment(student_id, amount, date)
     Globals.PaymentList.append(new_payment)
     Globals.Studentlist[index].add_payment(amount)
 
