@@ -5,10 +5,16 @@ import StudentViewer
 import ReportViewer
 import ExitSystem
 
+import test # Testing File reading
+
 
 def main():
     modified_Student_list = False
     modified_payment_list = False
+
+    #testing file read
+    test.populateStudentlist("StudentRecords.json")
+    test.populateStudentlist("PaymentRecords.json")
 
     while True:
         Menu.show_main_menu()

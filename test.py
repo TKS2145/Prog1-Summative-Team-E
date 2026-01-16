@@ -2,6 +2,6 @@ import Globals
 import FileHandler
 
 
-def readfile():
-    FileHandler.ReadFile("StudentRecords.json")
-
+def populateStudentlist(filename):
+    tempstudentlist = FileHandler.ReadFile(filename)
+    print(tempstudentlist)
