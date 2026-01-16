@@ -46,10 +46,10 @@ class Student:
 from datetime import datetime
 
 class Payment:
-    def __init__(self, student_id, amount):
+    def __init__(self, student_id, amount, date):
         self.student_id = student_id
         self.amount = float(amount) #hardcoding it as float just to make sure
-        self.date = datetime.now().strftime("%Y-%m-%d")
+        self.date = date
 
     def to_dict(self):
         return {

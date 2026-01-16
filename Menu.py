@@ -1,5 +1,5 @@
 def show_main_menu():
-    print("Welcome to African Leadership College of Higher Education ")
+    print("\nWelcome to African Leadership College of Higher Education ")
     print("-----------------------------------")
     print("\n---ALCHE Fee Payment System ---")
     print("choose an option:")

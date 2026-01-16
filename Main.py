@@ -3,10 +3,14 @@ import StudentAdder
 import PaymentAdder
 import StudentViewer
 import ReportViewer
+import PopulateList
 import ExitSystem
-
+from FileHandler import ReadFile
 
 def main():
+
+    PopulateList.populatinglists()
+
     modified_Student_list = False
     modified_payment_list = False
 
