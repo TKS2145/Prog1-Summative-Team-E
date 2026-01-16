@@ -57,7 +57,7 @@ def record_new_payment():
 
         date = datetime.now().strftime("%Y-%m-%d")
 
-        add_payment(student_id, amount)
+        add_payment(student_id, amount, date)
 
         print("\nPayment recorded successfully")
 
