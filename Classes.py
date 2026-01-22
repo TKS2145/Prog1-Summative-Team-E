@@ -1,12 +1,12 @@
 #Student Class
 
 class Student:
-    def __init__(self, student_id, name, class_name, total_fee, amount_paid=0.0):
+    def __init__(self, student_id, name, class_name, total_fee):
         self.student_id = student_id
         self.name = name
         self.class_name = class_name
         self.total_fee = float(total_fee)
-        self.amount_paid = amount_paid
+        self.amount_paid  = 0.0
         self.balance = self.total_fee - self.amount_paid
     #    self.payment_history = []  # list of payments 
 

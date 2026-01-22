@@ -11,7 +11,7 @@ def populatinglists():
 
         for x in DictListStudent:
 
-            add_student(x["Name"], x["Class Name"], x["Total Fee"], x["Amount Paid"],x["Student ID"] ) 
+            add_student(x["Name"], x["Class Name"], x["Total Fee"],x["Student ID"] ) 
 
     if DictListPayment != None:
         for y in DictListPayment:
